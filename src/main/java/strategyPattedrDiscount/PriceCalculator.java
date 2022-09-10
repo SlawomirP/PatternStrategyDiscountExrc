@@ -8,6 +8,10 @@ public class PriceCalculator {
     private boolean isSignedUpForNewsletter;
 
     public void calculate(int price, boolean isSignedUpForNewsletter){
+        pricingStrategy.calculatePrice(price,isSignedUpForNewsletter);
+    }
 
+    public void setPricingStrategy(PricingStrategy pricingStrategy){
+        this.pricingStrategy = pricingStrategy;
     }
 }

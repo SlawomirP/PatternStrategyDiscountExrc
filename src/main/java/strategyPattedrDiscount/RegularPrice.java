@@ -8,7 +8,7 @@ public class RegularPrice implements PricingStrategy{
     @Override
     public void calculatePrice(int price, boolean isSignedUpForNewsletter) {
         if (!isSignedUpForNewsletter){
-            System.out.println(price);
+            System.out.println("regular: " + price);
         } else {
             System.out.println("There is a discount");
         }
